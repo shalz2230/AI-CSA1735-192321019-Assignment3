@@ -1,0 +1,7 @@
+Grid_Size,Method,Symbols,Theoretical_Models,Models_Enumerated,KB_Evaluations,Execution_Time,Status
+2,Full,16,65536,65536,131008,0.22027562199991735,Executed
+3,Full,36,68719476736,0,0,0,Skipped
+4,Full,64,18446744073709551616,0,0,0,Skipped
+2,Relevant,4,16,16,16,3.444399999352754e-05,Executed
+3,Relevant,4,16,16,16,2.9504999929486075e-05,Executed
+4,Relevant,4,16,16,16,2.8031999590893975e-05,Executed
