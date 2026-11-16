@@ -1,0 +1,66 @@
+
+EXPERIMENT 1: ENTAILED QUERY
+=======================================================
+
+FIRST-ORDER RESOLUTION
+============================================================
+Strategy: Set of Support
+Initial negated query: ~Authorised(?query)
+Derived clause 1: ~Employee(?x_14) OR ~Document(?y_14) OR ~Handles(?x_14, ?y_14) OR ~Restricted(?y_14)
+Derived clause 2: ~Document(?y_14_15) OR ~Handles(sk_employee, ?y_14_15) OR ~Restricted(?y_14_15)
+Derived clause 3: ~Employee(?x_14_17) OR ~Handles(?x_14_17, R1) OR ~Restricted(R1)
+Derived clause 4: ~Employee(?x_14_23) OR ~Document(?y_24) OR ~Handles(?x_14_23, ?y_24) OR ~PatientData(?y_24)
+Derived clause 5: ~Employee(sk_employee) OR ~Document(?y_26) OR ~Restricted(?y_26) OR ~Audited(?y_26)
+Derived clause 6: ~Handles(sk_employee, R1) OR ~Restricted(R1)
+Derived clause 7: ~Document(?y_38) OR ~Handles(sk_employee, ?y_38) OR ~PatientData(?y_38)
+Derived clause 8: ~Document(?y_40) OR ~Restricted(?y_40) OR ~Audited(?y_40)
+Derived clause 9: ~Handles(sk_employee, R1) OR ~Document(R1) OR ~PatientData(R1)
+Derived clause 10: ~Restricted(R1) OR ~Document(R1) OR ~Audited(R1)
+Derived clause 11: ~Employee(?x_14_17_81) OR ~Handles(?x_14_17_81, R1) OR ~Document(R1) OR ~PatientData(R1)
+Derived clause 12: ~Employee(sk_employee) OR ~Restricted(R1) OR ~Document(R1) OR ~Audited(R1)
+Derived clause 13: ~Handles(sk_employee, R1) OR ~PatientData(R1)
+Derived clause 14: ~Document(R1) OR ~Handles(sk_employee, R1)
+Derived clause 15: ~Document(?y_110) OR ~PatientData(?y_110) OR ~Audited(?y_110)
+Derived clause 16: ~Handles(sk_employee, R1)
+Derived clause 17: ~PatientData(R1) OR ~Document(R1) OR ~Audited(R1)
+Derived clause 18: ~Document(R1) OR ~Audited(R1)
+Derived clause 19: ~Audited(R1)
+Derived clause 20: ~Document(R1)
+Derived clause 21: {}
+
+SUCCESS: Empty clause derived.
+The query is proved by refutation.
+
+Entailed query result: True
+
+EXPERIMENT 2: NON-ENTAILED QUERY
+=======================================================
+
+FIRST-ORDER RESOLUTION
+============================================================
+Strategy: Set of Support
+Initial negated query: ~Authorised(UnknownEmployee)
+Derived clause 1: ~Employee(UnknownEmployee) OR ~Document(?y_14) OR ~Handles(UnknownEmployee, ?y_14) OR ~Restricted(?y_14)
+Derived clause 2: ~Employee(UnknownEmployee) OR ~Handles(UnknownEmployee, R1) OR ~Restricted(R1)
+Derived clause 3: ~Employee(UnknownEmployee) OR ~Document(?y_24) OR ~Handles(UnknownEmployee, ?y_24) OR ~PatientData(?y_24)
+Derived clause 4: ~Employee(UnknownEmployee) OR ~Handles(UnknownEmployee, R1) OR ~Document(R1) OR ~PatientData(R1)
+Derived clause 5: ~Employee(UnknownEmployee) OR ~Handles(UnknownEmployee, R1) OR ~PatientData(R1)
+Derived clause 6: ~Employee(UnknownEmployee) OR ~Document(R1) OR ~Handles(UnknownEmployee, R1)
+Derived clause 7: ~Employee(UnknownEmployee) OR ~Handles(UnknownEmployee, R1)
+
+No empty clause derived within the step limit.
+
+Non-entailed query result: False
+
+EXPERIMENT SUMMARY
+=======================================================
+Entailed query:
+  Proved: True
+  Resolution steps: 24
+  Unifications: 24
+
+Non-entailed query:
+  Proved: False
+  Resolution steps: 24
+  Unifications: 24
+  Step limit: 50
