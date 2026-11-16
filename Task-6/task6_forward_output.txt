@@ -1,0 +1,24 @@
+
+FORWARD CHAINING
+=======================================================
+Iteration 1: 13 new facts
+Iteration 2: 13 new facts
+Iteration 3: 3 new facts
+Iteration 4: 2 new facts
+
+FIXED POINT REACHED
+----------------------------------------
+
+FORWARD CHAINING METRICS
+=======================================================
+initial_facts: 19
+total_facts: 50
+inferred_facts: 31
+rule_firings: 146
+redundant_derivations: 115
+iterations: 5
+unifications: 0
+directly_relevant_facts: 5
+irrelevant_facts_proxy: 26
+irrelevant_percentage_proxy: 83.87
+query_found: True

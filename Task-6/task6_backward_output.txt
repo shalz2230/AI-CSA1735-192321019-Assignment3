@@ -1,0 +1,22 @@
+
+BACKWARD CHAINING
+=======================================================
+Query: ('Approved', 'E2', 'Leave')
+Query proved: True
+Number of answers: 1
+
+BACKWARD CHAINING METRICS
+----------------------------------------
+goals_expanded: 16
+unifications: 47
+maximum_depth: 3
+repeated_subgoals: 1
+rule_applications: 9
+
+LEFT-RECURSION TEST
+----------------------------------------
+Recursive query: ('ReportsToIndirect', 'E4', 'CEO')
+Query proved: False
+Repeated subgoals: 1
+Maximum depth: 2
+Loop checking prevented repeated expansion.
